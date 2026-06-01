@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+jupyter
+nbconvert
+ipykernel
+python-dotenv
+setuptools<81
