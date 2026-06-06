@@ -1,7 +1,7 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/miniconda:3",
   "features": {},
-  "postCreateCommand": "python -m pip install --upgrade pip && python -m pip install -r requirements.txt && python -m ipykernel install --user --name python3 --display-name \"Python 3.12 (BAN 6003)\"",
+  "postCreateCommand": "conda install -y -n base python=3.12 pip && /opt/conda/bin/python -m pip install --upgrade pip && /opt/conda/bin/python -m pip install -r requirements.txt && /opt/conda/bin/python -m ipykernel install --user --name base --display-name \"base\"",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -10,7 +10,8 @@
         "ms-toolsai.jupyter"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.defaultInterpreterPath": "/opt/conda/bin/python",
+        "python.terminal.activateEnvironment": true,
         "jupyter.askForKernelRestart": false
       }
     }
