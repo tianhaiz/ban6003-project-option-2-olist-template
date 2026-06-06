@@ -15,5 +15,6 @@
     }
   },
   "forwardPorts": [],
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+  "postCreateCommand": "/opt/conda/bin/python -m ipykernel install --user --name ban6003 --display-name \"base(BAN6003)\""
 }
