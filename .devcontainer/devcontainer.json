@@ -1,7 +1,7 @@
 {
   "image": "mcr.microsoft.com/devcontainers/miniconda:3",
   "features": {},
-  "postCreateCommand": "conda install -y -n base python=3.12 pip && /opt/conda/bin/python -m pip install --upgrade pip && /opt/conda/bin/python -m pip install -r requirements.txt && /opt/conda/bin/python -m ipykernel install --user --name base --display-name \"base\"",
+  "postCreateCommand": "conda install -y -n base python=3.12 pip && /opt/conda/bin/python -m pip install --upgrade pip && /opt/conda/bin/python -m pip install -r requirements.txt && /opt/conda/bin/python -m ipykernel install --user --name base --display-name \"base(BANA6003)\"",
   "customizations": {
     "vscode": {
       "extensions": [
