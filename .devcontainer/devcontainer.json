@@ -1,7 +1,7 @@
 {
   "image": "mcr.microsoft.com/devcontainers/miniconda:3",
   "features": {},
-  "postCreateCommand": "python -m pip install --upgrade pip && python -m pip install -r requirements.txt && python -m ipykernel install --user --name base --display-name \"base\"",
+  "postCreateCommand": "/opt/conda/bin/python -m pip install --upgrade pip && /opt/conda/bin/python -m pip install -r requirements.txt && /opt/conda/bin/python -m ipykernel install --user --name base --display-name \"base\" && /opt/conda/bin/python -m ipykernel install --user --name python3 --display-name \"Python 3 (base)\"",
   "customizations": {
     "vscode": {
       "extensions": [
