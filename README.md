@@ -51,8 +51,9 @@ Recommended path:
 Local path:
 
 ```bash
+conda activate ban6003
 python -m pip install -r requirements.txt
-jupyter notebook
+code .
 ```
 
 ## Expected Repository Organization
