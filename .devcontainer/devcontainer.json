@@ -15,5 +15,6 @@
     }
   },
   "forwardPorts": [],
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+  "postCreateCommand": "/opt/conda/bin/python -m pip install -q -r requirements.txt || /opt/conda/bin/python -m pip install -q --user -r requirements.txt"
 }
