@@ -40,6 +40,10 @@ Important: `order_items.csv`, `order_payments.csv`, and `order_reviews.csv` may 
 
 See `data/README.md` for row meaning, expected keys, target eligibility, and join guidance for each file.
 
+## SQL with DuckDB
+
+The starter notebook uses DuckDB to run SQL directly on your pandas DataFrames and on the exported ABT CSV file, for example to check row counts, key uniqueness, and one aggregation against the pandas result. Milestone 2 requires at least one DuckDB query on your own project data. Using a hosted database such as Neon is optional and has no course guide.
+
 ## Working Environment
 
 Recommended path:
